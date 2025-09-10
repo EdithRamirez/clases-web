@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario</title>
+</head>
+
+
+<body>
+
+	<h2>Formulario de contacto</h2>
+
+	<!-- Inicio del formulario -->
+	<form action="#" method="post">
+		<!-- action: indica a qué archivo se envían los datos del formulario -->
+		<!-- method: define cómo se envían los datos: GET (en la URL) o POST (ocultos) -->
+
+		<!-- Campo de nombre y de tipo texto -->
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre" required>
+
+		<!-- Campo de teléfono y de tipo tel -->
+		<label for="telefono">Teléfono:</label>
+		<input type="tel" id="telefono" name="telefono" required>
+
+
+		<!-- Campo de correo y de tipo email -->
+		<label for="correo">Correo:</label>
+		<input type="email" id="correo" name="correo" required>
+
+
+		<!-- Botón de enviar -->
+		<button type="submit">Enviar</button>
+
+	</form>
+	<!-- Fin del formulario -->
+
+</body>
+
+</html>
