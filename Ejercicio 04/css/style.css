@@ -1,24 +1,28 @@
 /* Estilos generales */
+
+/* Elimina los márgenes/paddings por defecto, para mejor el tamaño de los elementos */
 * {
-	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* Quita los rellenos internos por defecto de los elementos */
 }
+
+/* Estilo desde etiqueta */
 body {
 	font-family: Arial, sans-serif;
 	background-color: #f9f9f9;
-	padding: 0;
-	margin: 0;
 }
 
-/* Título */
 h2 {
 	text-align: center;
 	color: #333;
+	margin: 15px 0;
 }
 
-/* Formulario */
+/* Estilos con ID*/
 #form-contact {
 	max-width: 400px;
-	margin: 0 auto; /* Centra el formulario */
+	margin: 0 auto; 
 	padding: 20px;
 	background-color: #fff;
 	border: 2px solid #ccc;
@@ -26,12 +30,18 @@ h2 {
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Etiquetas */
+/* Estilos con clase */
 .label {
 	display: block;
 	margin-top: 10px;
 	font-weight: bold;
 	color: #444;
+}
+
+.label-inline {
+	margin-bottom: 5px;
+	display: inline-block;
+	color: #333;
 }
 
 /* Campos de entrada */
@@ -43,6 +53,52 @@ input[type="email"] {
 	margin-top: 5px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
+}
+
+/* Estilos para radio y checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+	margin-right: 8px;
+	accent-color: #f77023;
+	/* color del check o radio en navegadores modernos */
+	cursor: pointer;
+}
+
+.input-box {
+	margin: 5px 0;
+}
+
+/* Estilo para los p dentro del id */
+#form-contact p {
+	margin-top: 15px;
+	font-weight: bold;
+	color: #444;
+	margin-bottom: 5px;
+}
+
+/* Estilos para el select */
+select {
+	width: 100%;
+	padding: 8px;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+	transition: border-color 0.3s ease;
+}
+
+/* Hover del select */
+select:hover {
+	border-color: #f77023;
+}
+
+/* focus del select */
+select:focus {
+	outline: none;
+	border-color: #f77023;
+	box-shadow: 0 0 5px rgba(247, 112, 35, 0.5);
 }
 
 /* Botón */
@@ -63,4 +119,45 @@ input[type="email"] {
 /* Hover del botón */
 .btn-send:hover {
 	background-color: #a14510;
+}
+
+.flex {
+	display: flex;
+}
+
+.input-radio {
+	width: 50%;
+}
+
+/* Estilos para pantallas de tablets y celulares*/
+@media screen and (max-width: 768px) {
+	body {
+		background: #ddd;
+	}
+	.input-radio {
+		width: 100%;
+	}
+	.btn-send {
+		background-color: #0d7d2f;
+	}
+	.btn-send:hover {
+		background-color: #0c4e20;
+	}
+	.btn-send {
+		background-color: #0d7d2f;
+	}
+	input[type="text"],
+	input[type="tel"],
+	input[type="email"],
+	select {
+		border: 1px solid #2e1818;
+	}
+	select:hover,
+	select:focus {
+		border-color: #0d7d2f;
+	}
+	input[type="radio"],
+	input[type="checkbox"] {
+		accent-color: #0d7d2f;
+	}
 }
