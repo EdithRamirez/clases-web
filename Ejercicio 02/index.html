@@ -1,94 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tablas</title>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tablas</title>
+	</head>
 
-<body>
+	<body>
 
-	<h1>Tablas</h1> 
-	
-	<h2>Ejemplo: Tabla con 5 filas y 3 columnas</h2>
-	
-	<!-- Inicia la tabla -->
-	<table border="1" cellpadding="8">
-	
-		<!-- tr / etiqueta para filas Fila 1 -->
-		<tr>
-			<!-- th / celda de encabezado -->
-			<th>Columna 1</th>
-			<th>Columna 2</th>
-			<th>Columna 3</th>
-		</tr>
-	
-		<!-- Fila 2 -->
-		<tr>
-			<!-- td / celda de datos -->
-			<td>Fila 1 - C1</td>
-			<td>Fila 1 - C2</td>
-			<td>Fila 1 - C3</td>
-		</tr>
-	
-		<!-- Fila 3 -->
-		<tr>
-			<td>Fila 2 - C1</td>
-			<td>Fila 2 - C2</td>
-			<td>Fila 2 - C3</td>
-		</tr>
-	
-		<!-- Fila 4 -->
-		<tr>
-			<td>Fila 3 - C1</td>
-			<td>Fila 3 - C2</td>
-			<td>Fila 3 - C3</td>
-		</tr>
-	
-		<!-- Fila 5 -->
-		<tr>
-			<td>Fila 4 - C1</td>
-			<td>Fila 4 - C2</td>
-			<td>Fila 4 - C3</td>
-		</tr>
-	
-	</table>
-	<!-- Termina la tabla -->
+		<h1>Tablas</h1> 
+		
+		<h2>Ejemplo: Tabla con 5 filas y 3 columnas</h2>
 
-	<h2>Tabla Semántica (HTML5)</h2>
-	<!-- Tabla con thead/ tbody / tfoot -->
-	<table border="1" cellpadding="8">
-		<!-- Encabezado de la tabla -->
-		<thead>
+		<!-- Inicia la tabla / border y cellpadding solo son ejemplo, despues se quitaran para darles estilos desde el css -->
+		<table border="1" cellpadding="8">
+			<!-- tr / etiqueta para filas Fila 1 -->
 			<tr>
-				<th>Mes</th>
-				<th>Ahorros</th>
+				<!-- th / celda de encabezado -->
+				<th>Columna 1</th>
+				<th>Columna 2</th>
+				<th>Columna 3</th>
 			</tr>
-		</thead>
-	
-		<!-- Cuerpo de la tabla -->
-		<tbody>
+			<!-- Fila 2 -->
 			<tr>
-				<td>Septiembre</td>
-				<td>$100</td>
+				<!-- td / celda de datos -->
+				<td>Fila 1 - C1</td>
+				<td>Fila 1 - C2</td>
+				<td>Fila 1 - C3</td>
 			</tr>
+		
+			<!-- Fila 3 -->
 			<tr>
-				<td>Octubre</td>
-				<td>$120</td>
+				<td>Fila 2 - C1</td>
+				<td>Fila 2 - C2</td>
+				<td>Fila 2 - C3</td>
 			</tr>
-		</tbody>
-	
-		<!-- Pie de la tabla -->
-		<tfoot>
+		
+			<!-- Fila 4 -->
 			<tr>
-				<td>Total</td>
-				<td>$220</td>
+				<td>Fila 3 - C1</td>
+				<td>Fila 3 - C2</td>
+				<td>Fila 3 - C3</td>
 			</tr>
-		</tfoot>
-	</table>
+		
+			<!-- Fila 5 -->
+			<tr>
+				<td>Fila 4 - C1</td>
+				<td>Fila 4 - C2</td>
+				<td>Fila 4 - C3</td>
+			</tr>
+		
+		</table>
+		<!-- Termina la tabla -->
 
+		<h2>Tabla Semántica (HTML5)</h2>
+		<!-- Tabla con thead/ tbody / tfoot -->
+		<table border="1" cellpadding="8">
+			<!-- Encabezado de la tabla -->
+			<thead>
+				<tr>
+					<th>Mes</th>
+					<th>Ahorros</th>
+				</tr>
+			</thead>
+		
+			<!-- Cuerpo de la tabla -->
+			<tbody>
+				<tr>
+					<td>Septiembre</td>
+					<td>$100</td>
+				</tr>
+				<tr>
+					<td>Octubre</td>
+					<td>$120</td>
+				</tr>
+			</tbody>
+		
+			<!-- Pie de la tabla -->
+			<tfoot>
+				<tr>
+					<td>Total</td>
+					<td>$220</td>
+				</tr>
+			</tfoot>
+		</table>
 
-</body>
-
+	</body>
 </html>

@@ -1,83 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Formulario con estilos</title>
+		<link rel="stylesheet" href="css/style.css"> <!-- Establecer relaciones con otros documentos, enlaces o archivos -->
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Formulario con estilos</title>
-	<link rel="stylesheet" href="css/style.css"> <!-- Establecer relaciones con otros documentos, enlaces o archivos -->
-</head>
+	<body>
+		<h2>Formulario de contacto</h2>
 
+		<!-- Inicio del formulario -->
+		<form id="form-contact" action="#" method="post">
+			<!-- action: indica a qué archivo se envían los datos del formulario -->
+			<!-- method: define cómo se envían los datos: GET (en la URL) o POST (ocultos) -->
 
-<body>
+			<!-- Campo de nombre y de tipo texto / required indica que el campo debe ser completado -->
+			<label class="label" for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre" required>
+			<!-- name: nombre del dato que se enviará -->
+			<!-- value: valor que contiene el campo -->
 
-	<h2>Formulario de contacto</h2>
+			<!-- Campo de teléfono y de tipo tel -->
+			<label class="label" for="telefono">Teléfono:</label>
+			<input type="tel" id="telefono" name="telefono" required>
 
-	<!-- Inicio del formulario -->
-	<form id="form-contact" action="#" method="post">
-		<!-- action: indica a qué archivo se envían los datos del formulario -->
-		<!-- method: define cómo se envían los datos: GET (en la URL) o POST (ocultos) -->
+			<!-- Campo de correo y de tipo email -->
+			<label class="label" for="correo">Correo:</label>
+			<input type="email" id="correo" name="correo" required>
 
-		<!-- Campo de nombre y de tipo texto / required indica que el campo debe ser completado -->
-		<label class="label" for="nombre">Nombre:</label>
-		<input type="text" id="nombre" name="nombre" required>
-		<!-- name: nombre del dato que se enviará -->
-		<!-- value: valor que contiene el campo -->
-
-		<!-- Campo de teléfono y de tipo tel -->
-		<label class="label" for="telefono">Teléfono:</label>
-		<input type="tel" id="telefono" name="telefono" required>
-
-
-		<!-- Campo de correo y de tipo email -->
-		<label class="label" for="correo">Correo:</label>
-		<input type="email" id="correo" name="correo" required>
-
-		<!-- Radio buttons  -->
-		<p>Selecciona tu género:</p>
-		<div class="flex">
-			<div class="input-radio">
-				<input type="radio" id="femenino" name="genero" value="Femenino">
-				<label class="label-inline" for="femenino">Femenino</label>
+			<!-- Radio buttons  -->
+			<p>Selecciona tu género:</p>
+			<div class="flex">
+				<div class="input-radio">
+					<input type="radio" id="femenino" name="genero" value="Femenino">
+					<label class="label-inline" for="femenino">Femenino</label>
+				</div>
+				<div class="input-radio">
+					<input type="radio" id="masculino" name="genero" value="Masculino">
+					<label class="label-inline" for="masculino">Masculino</label>
+				</div>
 			</div>
-			<div class="input-radio">
-				<input type="radio" id="masculino" name="genero" value="Masculino">
-				<label class="label-inline" for="masculino">Masculino</label>
+			
+			
+			<!-- Lista desplegable -->
+			<label class="label" for="carrera">Selecciona tu carrera:</label>
+			<select id="carrera" name="carrera">
+				<option value="sistemas">Ingeniería en Sistemas</option>
+				<option value="industrial">Ingeniería Industrial</option>
+				<option value="civil">Ingeniería Civil</option>
+				<option value="otro">Otra</option>
+			</select>
+
+			<!-- Checkbox  de selecciones múltiples -->
+			<p>Elige tus intereses:</p>
+			<div class="input-box">
+				<input type="checkbox" id="musica" name="intereses" value="Música">
+				<label for="musica">Música</label>
 			</div>
-		</div>
-		
-		
-		<!-- Lista desplegable -->
-		<label class="label" for="carrera">Selecciona tu carrera:</label>
-		<select id="carrera" name="carrera">
-			<option value="sistemas">Ingeniería en Sistemas</option>
-			<option value="industrial">Ingeniería Industrial</option>
-			<option value="civil">Ingeniería Civil</option>
-			<option value="otro">Otra</option>
-		</select>
+			
+			<div class="input-box">
+				<input type="checkbox" id="deportes" name="intereses" value="Deportes">
+				<label for="deportes">Deportes</label>
+			</div>
+			
+			<div class="input-box">
+				<input type="checkbox" id="lectura" name="intereses" value="Lectura">
+				<label for="lectura">Lectura</label>
+			</div>
+			<!-- Botón de enviar -->
+			<button type="submit" class="btn-send">Enviar</button>
 
-		<!-- Checkbox  de selecciones múltiples -->
-		<p>Elige tus intereses:</p>
-		<div class="input-box">
-			<input type="checkbox" id="musica" name="intereses" value="Música">
-			<label for="musica">Música</label>
-		</div>
-		
-		<div class="input-box">
-			<input type="checkbox" id="deportes" name="intereses" value="Deportes">
-			<label for="deportes">Deportes</label>
-		</div>
-		
-		<div class="input-box">
-			<input type="checkbox" id="lectura" name="intereses" value="Lectura">
-			<label for="lectura">Lectura</label>
-		</div>
-		<!-- Botón de enviar -->
-		<button type="submit" class="btn-send">Enviar</button>
+		</form>
+		<!-- Fin del formulario -->
 
-	</form>
-	<!-- Fin del formulario -->
-
-</body>
+	</body>
 
 </html>
