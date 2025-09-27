@@ -10,7 +10,7 @@
 /* Estilo desde etiqueta */
 body {
 	font-family: Arial, sans-serif;
-	background-color: #f9f9f9;
+	background-color: pink;
 }
 
 h2 {
@@ -45,14 +45,16 @@ h2 {
 }
 
 /* Campos de entrada */
-input[type="text"],
-input[type="tel"],
-input[type="email"] {
+.label {
 	width: 100%;
 	padding: 8px;
 	margin-top: 5px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
+}
+
+h1, h2 {
+	text-align: center;
 }
 
 /* Estilos para radio y checkbox */
@@ -132,7 +134,7 @@ select:focus {
 /* Estilos para pantallas de tablets y celulares*/
 @media screen and (max-width: 768px) {
 	body {
-		background: #ddd;
+		background: blue;
 	}
 	.input-radio {
 		width: 100%;
